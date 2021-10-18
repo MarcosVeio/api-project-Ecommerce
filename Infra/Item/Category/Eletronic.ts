@@ -1,8 +1,8 @@
 import { TaxItem } from "../TaxItem";
 
-export class Eletronic extends TaxItem{
-    constructor(description: string, price: number){
-        super('eletronic', description, price);
+export class Eletronic extends TaxItem {
+    constructor(category: string, description: string, price: number) {
+        super(category, description, price);
     }
 
     getTax(): number {

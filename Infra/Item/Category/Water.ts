@@ -1,7 +1,12 @@
 import { Item } from "../Item";
 
-export class Water extends Item{
-    constructor(description: string, price: number){
-        super('Water', description, price);
+export class Water extends Item {
+    constructor(category: string, description: string, price: number) {
+        super(category, description, price);
     }
+
+    calculateTaxes() {
+        return this.price
+    }
+
 }

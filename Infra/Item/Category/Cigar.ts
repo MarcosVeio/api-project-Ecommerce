@@ -1,8 +1,8 @@
 import { TaxItem } from "../TaxItem";
 
-export class Cigar extends TaxItem{
-    constructor(description: string, price: number){
-        super('cigar', description, price);
+export class Cigar extends TaxItem {
+    constructor(category: string, description: string, price: number) {
+        super(category, description, price)
     }
 
     getTax(): number {
